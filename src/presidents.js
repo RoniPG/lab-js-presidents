@@ -480,5 +480,9 @@ function countRepublicanPresidents(presidentsArr) {
 }
 
 // Bonus: Iteration 8 | Sort Presidents by Name - `sort()`
-function sortPresidentsByName(presidentsArr) { }
+function sortPresidentsByName(presidentsArr) { 
+  return presidentsArr.sort((a, b) => a.name.localeCompare(b.name));
+    // Añadiendo .toLowerCase tanto a.name y b.name te aseguras que sea case insensitive
+
+}
 
