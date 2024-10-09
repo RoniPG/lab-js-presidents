@@ -448,8 +448,8 @@ function countYearsInOffice(presidentsArr) {
 
 
 // Iteration 4 | Sort Presidents by Birth Year - `sort()`
-function sortPresidentsByBirthYear(presidentsArr) { 
-  return presidentsArr.sort((a, b) => a.birthYear - b.birthYear);  
+function sortPresidentsByBirthYear(presidentsArr) {
+  return presidentsArr.sort((a, b) => a.birthYear - b.birthYear);
 }
 
 
@@ -458,12 +458,11 @@ function sortPresidentsByBirthYear(presidentsArr) {
 // Bonus: Iteration 5 | Age at Inauguration - `map()`
 function getAgeAtInauguration(presidentsArr) {
   return presidentsArr.map(president => {
-    const edad = president.birthYear - president.tookOffice;
+    const ageAtInauguration  =  president.tookOffice - president.birthYear;
+    const updatedPresident = {...president, ageAtInauguration};
+    return updatedPresident;
   });
- }
-
-
-
+}
 
 // Bonus: Iteration 6 | Presidents Born After - `filter()`
 function getPresidentsBornAfter(presidentsArr, year) { }
