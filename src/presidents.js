@@ -465,10 +465,9 @@ function getAgeAtInauguration(presidentsArr) {
 }
 
 // Bonus: Iteration 6 | Presidents Born After - `filter()`
-function getPresidentsBornAfter(presidentsArr, year) { }
-
-
-
+function getPresidentsBornAfter(presidentsArr, year) { 
+  return presidentsArr.filter((president)  => president.birthYear > year);
+}
 
 // Bonus: Iteration 7 | Count Republican Presidents
 function countRepublicanPresidents(presidentsArr) { }
