@@ -483,6 +483,4 @@ function countRepublicanPresidents(presidentsArr) {
 function sortPresidentsByName(presidentsArr) { 
   return presidentsArr.sort((a, b) => a.name.localeCompare(b.name));
     // Añadiendo .toLowerCase tanto a.name y b.name te aseguras que sea case insensitive
-
 }
-
